@@ -1,0 +1,226 @@
+@media (max-width: 1200px) {
+  .nav{
+    &__item{
+      a{
+        font-size: 14px;
+      }
+    }
+  }
+  .promo{
+    min-height: 770px;
+    &__right{
+      padding-right: 1%;
+    }
+    &__left{
+      padding-left: 1%;
+    }
+
+  }
+}
+@media (max-width: 991px) {
+  .container{
+    width: 100vw;
+    margin: 0;
+  }
+  .nav{
+    &__item{
+      padding: 7px 2%;
+      a{
+        font-size: 10px;
+      }
+    }
+  }
+  .promo{
+    &__title{
+      font-size: 48px;
+    }
+    &__subtitle{
+      font-size: 30px;
+    }
+    &__description{
+      font-size: 15px;
+    }
+  }
+  .reason{
+    &__circle{
+      width: 15vw;
+      height: 15vw;
+    }
+    &__description{
+      width: 30vw;
+      font-size: 13px;
+      span{
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .nav{
+    &__item{
+      padding: 7px 1%;
+      a{
+        font-size: 9px;
+      }
+    }
+  }
+  .promo{
+    &__left{
+      img{
+        width: 30vw;
+      }
+    }
+    &__logodescr{
+      font-size: 10px;
+    }
+    &__right{
+      a{
+        font-size: 15px;
+      }
+    }
+    &__tel{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 2vw;
+    }
+    &__title{
+      font-size: 36px;
+    }
+    &__subtitle{
+      font-size: 22px;
+    }
+  }
+  .reason{
+    &__item{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__circle{
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    &__description{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .btn{
+    width: 40vw;
+    &_promo{
+      width: 60vw;
+    }
+  }
+  .container{
+    width: 100vw;
+  }
+  .header{
+    font-size: 25px;
+  }
+  .nav{
+    position: static;
+    width: 100vw;
+    padding-top: 0;
+    &__menu{
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      left: -100%;
+      top: 0;
+      width: 70%;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.8);
+      transition: 0.5s all;
+      &_active{
+        left: 0;
+      }
+    }
+    &__item{
+      border-right: none;
+      padding: 0 ;
+      a{
+        font-size: 17px;
+      }
+    }
+    .hamburger{
+      display: block;
+      position: absolute;
+      top: 25px;
+      transform: translateY(-50%);
+      right: 10px;
+      width: 30px;
+      height: 12px;
+      background-color: black;
+      span{
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin-bottom: 2px;
+        background-color: white;
+      }
+      &_active{
+        margin-top: 8px;
+        span{
+          margin-top: -4px;
+          &:nth-child(1){
+            transform: translateY(3px) rotate(-45deg);
+          }
+          &:nth-child(2){
+            display: none;
+          }
+          &:nth-child(3){
+            transform: translateY(3px) rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+  .promo{
+    padding-top: 0;
+    width: 100vw;
+    &__logodescr{
+      display: none;
+    }
+    &__tel{
+      display: none;
+    }
+    &__wrapper{
+      width: 100vw;
+      justify-content: space-around;
+    }
+    &__left{
+      margin-top: 10px;
+      padding: 0;
+      width: 40vw;
+      img{
+        width: 100%;
+      }
+    }
+    &__body{
+      width: 100vw;
+      padding: 30px 0;
+    }
+    &__title{
+      font-size: 43px;
+      line-height: 0.9;
+    }
+    &__subtitle{
+      font-size: 24px;
+      line-height: 0.9;
+    }
+    &__description{
+      padding: 0 10px;
+    }
+  }
+  .reason{
+    &__item{
+      width: 100%;
+    }
+    &__circle{
+      width: 30vw;
+      height: 30vw;
+    }
+  }
+}

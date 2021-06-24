@@ -1,0 +1,28 @@
+.nav{
+  position: fixed;
+  height: 51px;
+  width: 100%;
+  background-color: #212121;
+  padding-top: 7px;
+  z-index: 3;
+  .hamburger{
+    display: none;
+  }
+  &__menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+  }
+  &__item{
+    a{
+      font-size: 15px;
+      font-weight: 300;
+      color: #ffffff;
+    }
+    border-right: 2px dotted black;
+    padding: 7px 25px;
+    &:nth-child(6){
+      border-right: none;
+    }
+  }
+}
