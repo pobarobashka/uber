@@ -1,0 +1,76 @@
+.mobile{
+  padding: 48px 0 61px;
+  background: url("../../img/mobile_bg.svg") center center/cover no-repeat;
+  &__description{
+    margin-top: 16px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    color: #222222;
+  }
+  &__wrapper{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__item{
+    width: 320px;
+    height: 280px;
+    position: relative;
+    margin: 0 14px 19px;
+    padding-top: 92px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    &:nth-child(1){
+      background: url("../../img/mobile_1.jpg") center center/cover no-repeat;
+    }
+    &:nth-child(2){
+      background: url("../../img/mobile_2.jpg") center center/cover no-repeat;
+    }
+    &:nth-child(3){
+      background: url("../../img/mobile_3.jpg") center center/cover no-repeat;
+    }
+    &:nth-child(4){
+      background: url("../../img/mobile_4.jpg") center center/cover no-repeat;
+    }
+    &:nth-child(5){
+      background: url("../../img/mobile_5.jpg") center center/cover no-repeat;
+    }
+    &:nth-child(6){
+      background: url("../../img/mobile_6.jpg") center center/cover no-repeat;
+    }
+  }
+  &__circle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-13px);
+    background-color: #000000;
+    &:before{
+      content: '';
+      display: block;
+      width: 2px;
+      height: 14px;
+      transform: translateX(7px);
+      background-color: #1eacc7;
+    }
+    &:after{
+      content: '';
+      display: block;
+      width: 14px;
+      height: 2px;
+      transform: translateX(-1px);
+      background-color: #1eacc7;
+    }
+  }
+}
