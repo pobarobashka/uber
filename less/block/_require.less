@@ -1,0 +1,68 @@
+.require{
+  padding: 68px 0 23px;
+  &__wrapper{
+    margin-top: 33px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 17px;
+    font-weight: 300;
+    color: #1ca8c3;
+  }
+  &__item{
+    width: 39%;
+    margin-bottom: 62px;
+    margin-right: 104px;
+  }
+  &__header{
+    font-size: 22px;
+    font-weight: 400;
+    color: @blue;
+    &_row2{
+      color: @red;
+      font-size: 22px;
+      font-weight: 400;
+    }
+  }
+  &__list{
+    &_row1{
+        list-style-type: none;
+      li{
+        padding-left: 35px;
+        position: relative;
+        font-size: 15px;
+        font-weight: 300;
+        color: #222222;
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          background: url("../../icons/check_blue.png") center center/cover no-repeat;
+        }
+      }
+    }
+    &_row2{
+      list-style-type: none;
+      li{
+        padding-left: 35px;
+        position: relative;
+        font-size: 15px;
+        font-weight: 300;
+        color: #222222;
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          background: url("../../icons/check_red.png") center center/cover no-repeat;
+        }
+      }
+    }
+  }
+}
